@@ -1,0 +1,79 @@
+<div class="bgComponent">
+    <div class="form">
+      <mat-card class="card">
+        <mat-card-title>
+            Register Student
+        </mat-card-title>
+        <mat-card-content>
+            <div class="container">
+                <mat-form-field>
+                    <input 
+                        [(ngModel)]="registerData.name"
+                        matInput
+                        placeholder="Name"
+                        required
+                    />
+                </mat-form-field>
+                <mat-form-field>
+                    <input 
+                        [(ngModel)]="registerData.LastName"
+                        matInput
+                        placeholder="Last name"
+                        required
+                    />
+                </mat-form-field>
+                <mat-form-field>
+                    <input 
+                        [(ngModel)]="registerData.dni"
+                        type="number"
+                        matInput
+                        placeholder="identificationDocument"
+                        required
+                    />
+                </mat-form-field>
+                <mat-form-field>
+                    <input 
+                        [(ngModel)]="registerData.address"
+                        matInput
+                        placeholder="address"
+                        required
+                    />
+                </mat-form-field>
+                <mat-form-field>
+                    <input 
+                        [(ngModel)]="registerData.telephone"
+                        matInput
+                        placeholder="telephone"
+                        required
+                    />
+                </mat-form-field>
+                <mat-form-field>
+                    <input 
+                        [(ngModel)]="registerData.email"
+                        type="email"
+                        matInput
+                        placeholder="email"
+                        required
+                    />
+                </mat-form-field>
+                <mat-form-field>
+                    <input 
+                        [(ngModel)]="registerData.course"
+                        matInput
+                        placeholder="course"
+                        required
+                    />
+                </mat-form-field>
+            </div>
+        </mat-card-content>
+        <mat-card-actions>
+            <button (click)="registerStudent()"
+                    class="button colorButton"
+                    mat-raised-button
+            >
+               Register
+            </button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+</div>
