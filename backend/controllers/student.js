@@ -9,7 +9,8 @@ const registerStudent = async (req, res) => {
     !req.body.dni ||
     !req.body.address ||
     !req.body.telephone ||
-    !req.body.email
+    !req.body.email ||
+    !req.body.password
   )
     return res.status(400).send("Incomplete data");
 

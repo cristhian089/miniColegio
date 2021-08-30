@@ -16,7 +16,7 @@
                 </mat-form-field>
                 <mat-form-field>
                     <input 
-                        [(ngModel)]="registerData.LastName"
+                        [(ngModel)]="registerData.lastName"
                         matInput
                         placeholder="Last name"
                         required
@@ -53,6 +53,15 @@
                         type="email"
                         matInput
                         placeholder="email"
+                        required
+                    />
+                </mat-form-field>
+                <mat-form-field>
+                    <input 
+                        [(ngModel)]="registerData.password"
+                        type="password"
+                        matInput
+                        placeholder="password"
                         required
                     />
                 </mat-form-field>
